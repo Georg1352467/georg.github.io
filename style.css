@@ -2,13 +2,11 @@
  	width: 600px;
  	display: flex;
  	flex-direction: column;
- 	border: 1px solid black;
  	margin-left: 10%;
 }
-head{
+header{
  	width: 100%;
- 	display: flex;
- 	flex-direction: row;
+  	border: 5px solid black;
 }
 img{
 	float: left;
@@ -29,6 +27,7 @@ section{
 	align-items: center;
 	flex-direction: column;
 	height: 100px;
+ 	border: 5px solid black;
 }
 footer{
 	width: 100%;
@@ -36,6 +35,7 @@ footer{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+ 	border: 5px solid black;
 }
 button{
 	width: 100px;
