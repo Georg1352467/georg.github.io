@@ -4,21 +4,81 @@
 		<meta charset="utf-8">
 		<title>repository</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<script type="text/javascript">
+			window.onload = function(){
+
+	document.querySelector('#menu').onmouseover = menuShow;
+	document.querySelector('#menu').onmouseout = menuHide;
+
+	document.onkeydown = function(event){
+		console.log(event);
+		if (event.code =='KeyM') menuShow();
+		if (event.code =='Escape') menuHide();
+	}
+	function menuShow(){ /*Функция*/
+		document.querySelector('#menu').style.left = 0;
+	}
+
+	function menuHide(){ /*Функция*/
+		document.querySelector('#menu').style.left = '-230px';
+	}
+}
+
+		</script>
+
+	<script defer="">
+		new WOW().init();
+	</script>
+	<link href="WOW-master/css/ilbs/animate.css" rel="stylesheet" type="text/css">
+	<script src="WOW-master/dist/wow.min.js"></script>
+	<script defer="" src="js/wow.min.js"></script>
+	<script defer="" src="js/anime.js"></script>
+	<script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 	<body>
-		<div class="box">
-			<header>
-				<img src="img.png">
-				<p>Несильно начинающий Веб-разработчик</p>
-				<p>Гришко Георгий</p>
-			</header>
-			<section>
-				<p>Мои проэкты</p>
+		<div class="box">	
+			<div id="menu">
 				<ul>
-					<li>Калькулятор</li>
-					<li>Адаптивное меню</li>
-					<li>Слайдер</li>
+					<li><a href="#header">>Начало<</a></li>
+					<li><a href="#section">>Что я умею<</a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
 				</ul>
+			</div>	
+			<header id="header">
+				<h1>САЙТ-ПОРТФОЛИО ВЕБ-РАЗРАБОТЧИКА</h1>
+				<h2 class="h2_1">ЗДРАВСТВУЙТЕ! Меня зовут Гоергий и это мой сайт портфолио.</h2>
+				<img class="arrow" src="img2.png">
+				<img class="image" src="img.png">
+				<h2 class="h2_2">Гришко Георгий</h2>
+				<h3>WEB-РАЗРАБОТЧИК / HTML-ВЕРСТАЛЬЩИК</h3>
+				<h3>ПРОГРАММИСТ PHP / JAVASCRIPT</h3>
+				<h3>А ТАКЖЕ МАГ И ВОЛШЕБНИК</h3>
+				<img class="arrow2" src="img3.png">
+       		</header>
+			<section id="section">
+				<div class="content">
+					<h2 style="text-align: center;">МОИ ЗНАНИЯ</h2>
+					<div class="content2">
+						<div class="circl wow fadeInUp">
+							<h3>HTML</h3>
+							<img src="img4.png">
+						</div>
+						<div class="circl wow fadeInUp">
+							<h3>Css</h3>
+							<img src="img4.png">
+						</div>
+						<div class="circl wow fadeInUp">
+							<h3>JavaScript</h3>
+							<img src="img4.png">
+						</div>
+						<div class="circl wow fadeInUp">
+							<h3>Photoshop</h3>
+							<img src="img4.png	">
+						</div>
+					</div>
+				</div>
 			</section>
 			<footer>
 				<button><a href="rules.html">ЗОЖ</a></button>

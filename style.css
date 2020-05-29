@@ -1,19 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
 .box{
- 	width: 600px;
+ 	width: 100%;
  	display: flex;
  	flex-direction: column;
- 	margin-left: 10%;
 }
 header{
  	width: 100%;
-  	border: 5px solid black;
+ 	background: url(https://i.pinimg.com/originals/ec/bf/13/ecbf1363397b853aed8fb8773fd60307.jpg);
+ 	min-height: 925px;
+ 	display: flex;
+ 	align-items: center;
+ 	flex-direction: column;
+}
+h1, h3{
+	text-align: center;
+	color: #A52A2A;
+}
+h1{
+	margin-top: 5%;
+	font-size: 3em;
+}
+h2{
+	font-size: 2.5em;
+}
+.h2_1{
+	width: 100%;
+	text-align: center;
+	color: #A52A2A;
+	margin-top: 2%;
+	font-size: 2.5em;
+
+}
+.h2_2{
+	text-align: center;
+	width: 20%;
+	margin-top: -12%;
+	margin-bottom: 5%;
+	border: 5px solid black;
+	color: #A52A2A;
+	padding: 1%;
+}
+h3{
+	float: left;
+	text-align: center;
+	font-size: 2em;
+	margin-top: 2%;
+	width: 40%;
 }
 img{
 	float: left;
 	width: 100px;
 	margin: 5%;
+	display: block;
+}
+.arrow{
+	float: left;
+	width: 150px;
+	margin-top: 10%;
+	margin-left: -70%;
+}
+.arrow2{
+	float: right;
+	width: 450px;
+	margin: 0%;
+	margin-top: -5%;
+	margin-left: 70%;
+}
+.image{
+	float: left;
+	width: 150px;
+	border-radius: 10px;
 	border: 5px solid black;
-	border-radius: 100%;
+	margin-left: -50%;
+	margin-top: -13%;
 }
 p{
 	width: 40%;
@@ -39,4 +101,37 @@ footer{
 button{
 	width: 100px;
 	height: 25px;
+}
+#menu{
+	width: 250px;
+	height: 100vh;
+	background: black;
+	position: fixed;         /*Позиция*/
+	left: -230px;
+	top: 0px;
+	transition: all ease 1s; /*Анимация*/
+}
+li{
+	color: darkorange;
+	font-size:18px;
+	padding: 10px;
+	text-align: center;
+}
+.content{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+
+}
+.content2{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+
+}
+.circl{
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
